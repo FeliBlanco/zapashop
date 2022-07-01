@@ -1,0 +1,118 @@
+* {
+    padding:0;
+    margin:0;
+    font-family: 'Anek Malayalam', sans-serif;
+}
+
+body {
+    background: #e8e8e8;
+}
+
+.cartas {
+    background:#fff;
+    display:flex;
+    justify-content: space-between;
+    width:80%;
+    margin:30px auto;
+    padding:20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
+}
+
+.cartasitem {
+    flex:1;
+    display: flex;
+    align-items: center;
+    font-size:20px;
+    user-select: none;
+    cursor:pointer;
+    gap:15px;
+}
+
+.cartasitem_descri {
+    font-size:15px;
+    color:#696969;
+} 
+
+.car {
+    width:80%;
+    margin:20px auto;
+}
+
+.carcontent{
+    display: flex;
+    position: relative;
+}
+.carcontent ul{
+    display:flex;
+    gap:20px;
+    flex:1;
+}
+.carcontent li {
+    width:300px;
+    min-width: 300px;
+    background:#fff;
+    list-style: none;
+    border:1px solid #e1e1e1;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor:pointer;
+    user-select:none;
+}
+
+.caritemimg {
+    width:100%;
+    height:300px;
+    background:gray;
+}
+.caritemdescri {
+    padding:20px;
+}
+
+.caritoitemprecio {
+    font-size:22px;
+}
+
+.caritoitemnombre {
+    font-size:18px;
+}
+
+.cartitle {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin:20px 0;
+}
+
+.carbtn{
+    position: absolute;
+    z-index: 100;
+    bottom:0;
+    top:0;
+    display:flex;
+    align-items: center;
+}
+
+.carbtn button {
+    width:70px;
+    height:70px;
+    border-radius: 100%;
+    border:0;
+    cursor:pointer;
+    border:1px solid #e1e1e1;
+    display:none;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+}
+
+.carcontent:hover > .carbtn button {
+    display:block;
+}
+
+.btnleft {
+    left:-40px;
+}
+.btnright {
+    right:-40px;
+}
